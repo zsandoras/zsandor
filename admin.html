@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="styles/main.css" />
     <meta
       name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    />
+  </head>
+  <body>
+    <div class="ambient-orbs" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
       content="Administrative panel placeholder for the Zsandor website."
     />
   </head>
@@ -25,6 +34,121 @@
     </header>
 
     <main>
+      <section class="section-card admin-gate" data-admin-gate>
+        <h1>Lorem ipsum dolor</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec
+          ligula dictum, semper est ut, tincidunt lorem.
+        </p>
+        <form class="admin-login" data-admin-login>
+          <div>
+            <label for="admin-username">Lorem ipsum</label>
+            <input
+              id="admin-username"
+              name="username"
+              type="text"
+              autocomplete="username"
+              placeholder="admin"
+              required
+            />
+          </div>
+          <div>
+            <label for="admin-password">Dolor sit amet</label>
+            <input
+              id="admin-password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="admin"
+              required
+            />
+          </div>
+          <button type="submit">Lorem ipsum</button>
+          <p class="form-hint" aria-live="polite" data-admin-message></p>
+        </form>
+      </section>
+
+      <section class="admin-dashboard" data-admin-dashboard hidden>
+        <header class="section-card">
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non
+            mi at nunc commodo finibus ut sed augue.
+          </p>
+          <div class="admin-actions">
+            <button type="button" data-add-page>Lorem ipsum</button>
+            <button type="button" data-export-site>Lorem ipsum</button>
+          </div>
+        </header>
+
+        <div class="admin-grid" data-admin-grid>
+          <article class="admin-card">
+            <header>
+              <h3>index.html</h3>
+              <span>Lorem ipsum</span>
+            </header>
+            <textarea rows="6">&lt;section&gt;Lorem ipsum dolor sit amet&lt;/section&gt;</textarea>
+            <button type="button" data-preview>Lorem ipsum</button>
+          </article>
+          <article class="admin-card">
+            <header>
+              <h3>guitar.html</h3>
+              <span>Lorem ipsum</span>
+            </header>
+            <textarea rows="6">&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;</textarea>
+            <button type="button" data-preview>Lorem ipsum</button>
+          </article>
+          <article class="admin-card">
+            <header>
+              <h3>food-gallery.html</h3>
+              <span>Lorem ipsum</span>
+            </header>
+            <textarea rows="6">&lt;img src=&quot;lorem.jpg&quot; alt=&quot;Lorem ipsum&quot; /&gt;</textarea>
+            <button type="button" data-preview>Lorem ipsum</button>
+          </article>
+          <article class="admin-card">
+            <header>
+              <h3>mail.html</h3>
+              <span>Lorem ipsum</span>
+            </header>
+            <textarea rows="6">&lt;form&gt;Lorem ipsum dolor sit amet&lt;/form&gt;</textarea>
+            <button type="button" data-preview>Lorem ipsum</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <template id="admin-page-template">
+      <article class="admin-card">
+        <header>
+          <h3>new-page.html</h3>
+          <span>Lorem ipsum</span>
+        </header>
+        <textarea rows="6">&lt;section&gt;Lorem ipsum dolor sit amet&lt;/section&gt;</textarea>
+        <button type="button" data-preview>Lorem ipsum</button>
+      </article>
+    </template>
+
+    <footer>© 2025 Zsandor</footer>
+
+    <div class="floating-audio" data-player>
+      <button class="player-toggle" data-player-toggle aria-label="Play audio">
+        ▶
+      </button>
+      <div class="player-track">
+        <span class="track-title">Lorem Ipsum Sessions</span>
+        <div class="player-progress" aria-hidden="true">
+          <span class="progress-bar"></span>
+        </div>
+      </div>
+      <audio
+        src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_08cf358a63.mp3?filename=future-bass-117532.mp3"
+        preload="none"
+        loop
+      ></audio>
+    </div>
+
+    <script src="scripts/main.js" defer></script>
       <section class="section-card">
         <h1>Admin console</h1>
         <p>
