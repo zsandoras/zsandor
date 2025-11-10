@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zsandor — Mail</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <meta name="description" content="Login to Zsandor mail via IONOS." />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="nav-brand" href="index.html">Zsandor</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="guitar.html">Guitar</a>
+          <a href="food-gallery.html">Food Gallery</a>
+          <a href="mail.html">Mail</a>
+          <a href="admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-card" style="max-width: 540px; margin: 0 auto 3rem;">
+        <h1>Mail access</h1>
+        <p>
+          Use the secure form below to jump directly to the Zsandor mail portal
+          powered by IONOS.
+        </p>
+      </section>
+
+      <form action="https://mail.ionos.com" method="get">
+        <div>
+          <label for="mail-username">Email address</label>
+          <input
+            id="mail-username"
+            name="username"
+            type="email"
+            autocomplete="username"
+            placeholder="you@zsandor.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="mail-password">Password</label>
+          <input
+            id="mail-password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            placeholder="Enter password"
+            required
+          />
+        </div>
+        <div>
+          <label for="mail-language">Language</label>
+          <input
+            id="mail-language"
+            name="language"
+            type="text"
+            placeholder="en"
+            value="en"
+          />
+        </div>
+        <button type="submit">Open IONOS Mail</button>
+      </form>
+    </main>
+
+    <footer>© 2025 Zsandor</footer>
+  </body>
+</html>
