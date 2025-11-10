@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zsandor — Mail</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <meta name="description" content="Lorem ipsum dolor sit amet." />
+  </head>
+  <body>
+    <div class="ambient-orbs" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <header>
+      <nav>
+        <a class="nav-brand" href="index.html">Zsandor</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="guitar.html">Guitar</a>
+          <a href="food-gallery.html">Food Gallery</a>
+          <a href="mail.html">Mail</a>
+          <a href="admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-card" style="max-width: 540px; margin: 0 auto 3rem;">
+        <h1>Lorem ipsum dolor</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut purus
+          sed arcu rhoncus posuere eget non dolor. Integer ultricies lectus a
+          imperdiet imperdiet.
+        </p>
+      </section>
+
+      <form action="https://mail.ionos.com" method="get">
+        <div>
+          <label for="mail-username">Lorem ipsum</label>
+          <input
+            id="mail-username"
+            name="username"
+            type="email"
+            autocomplete="username"
+            placeholder="you@zsandor.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="mail-password">Dolor sit amet</label>
+          <input
+            id="mail-password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            placeholder="Enter password"
+            required
+          />
+        </div>
+        <div>
+          <label for="mail-language">Consectetur</label>
+          <input
+            id="mail-language"
+            name="language"
+            type="text"
+            placeholder="en"
+            value="en"
+          />
+        </div>
+        <button type="submit">Lorem ipsum</button>
+      </form>
+    </main>
+
+    <footer>© 2025 Zsandor</footer>
+
+    <div class="floating-audio" data-player>
+      <button class="player-toggle" data-player-toggle aria-label="Play audio">
+        ▶
+      </button>
+      <div class="player-track">
+        <span class="track-title">Lorem Ipsum Sessions</span>
+        <div class="player-progress" aria-hidden="true">
+          <span class="progress-bar"></span>
+        </div>
+      </div>
+      <audio
+        src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_08cf358a63.mp3?filename=future-bass-117532.mp3"
+        preload="none"
+        loop
+      ></audio>
+    </div>
+
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>
