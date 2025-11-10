@@ -3,6 +3,9 @@
 A dark, minimal multi-page site for the Zsandor persona. The layout now ships
 with ambient motion, a floating music player, and a front-end admin sandbox so
 you can iterate on copy and structure before wiring up a full CMS.
+A dark, minimal portfolio for Zsandor — fingerstyle guitarist and chef. The
+site blends music, culinary art, and practical tools like mail access in a
+single static experience.
 
 ## Getting started
 
@@ -15,6 +18,7 @@ you can iterate on copy and structure before wiring up a full CMS.
    cd zsandor
    ```
 3. Launch a local server (recommended) or open any HTML file directly in your
+3. Launch a local server (recommended) or open `index.html` directly in your
    browser:
    ```bash
    python -m http.server 8000
@@ -52,3 +56,19 @@ you can iterate on copy and structure before wiring up a full CMS.
 Because the site is static, it can live on any static host (GitHub Pages,
 Netlify, Vercel, IONOS, etc.). Upload the HTML, CSS, JS, and asset files, then
 configure your domain.
+- `index.html` – Home page introducing Zsandor’s musical and culinary worlds.
+- `guitar.html` – Lists featured fingerstyle arrangements with embedded
+  Soundslice tabs.
+- `food-gallery.html` – Responsive gallery of signature dishes.
+- `mail.html` – Mail portal with a login form redirecting to IONOS Mail.
+- `admin.html` – Placeholder admin space ready for `.htaccess` protection.
+- `styles/main.css` – Shared styling across all pages.
+
+## Deployment notes
+
+- Add server-side protection (e.g., `.htaccess`/`.htpasswd`) for `admin.html`
+  before going live.
+- Replace demo Soundslice score URLs and gallery photography with your own
+  assets when ready.
+- Because the site is static, it can be hosted on any service that serves HTML
+  files (GitHub Pages, Netlify, etc.).
